@@ -1,41 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Link in Bio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@BassProwler</title>
   <style>
     body {
-      font-family: sans-serif;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #f4f4f4;
       text-align: center;
-      background-color: #1a1a1a;
-      color: #fff;
-      padding: 2em;
+      padding: 2rem 1rem;
     }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
     img {
-      width: 120px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
-      margin-bottom: 1em;
+      border: 3px solid #444;
+      margin-bottom: 1rem;
     }
-    a {
+
+    h1 {
+      font-size: 2rem;
+      margin: 0.5rem 0;
+    }
+
+    p {
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      color: #bbb;
+    }
+
+    a.button {
       display: block;
-      margin: 0.5em 0;
-      padding: 0.75em;
-      background: #444;
-      color: white;
+      margin: 0.75rem auto;
+      padding: 1rem;
+      max-width: 100%;
+      background-color: #222;
+      color: #fff;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
     }
-    a:hover {
-      background: #666;
+
+    a.button:hover {
+      background-color: #333;
+    }
+
+    @media (min-width: 600px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      a.button {
+        font-size: 1.2rem;
+        padding: 1.2rem;
+      }
     }
   </style>
 </head>
 <body>
-  <img src="https://yt3.googleusercontent.com/nnqYh6KBZvmTw-JNabzac3JwpzxQBuRmpwiyt18hZzi-gZWl750Qx6Io_kBOdomLHFxl8bBCxNs=s160-c-k-c0x00ffffff-no-rj" alt="Profile Pic">
-  <h1>@BassProwler</h1>
-  <p>I AM THE BASS SLAYER</p>
-  <a href="https://example.com">Website</a>
-  <a href="https://www.youtube.com/@BassProwler">Youtube</a>
-  <a href="https://www.tiktok.com/@bass.prowler?_t=ZM-8xVxBRzo0bY&_r=1">TikTok</a>
+  <div class="container">
+    <img src="https://yt3.googleusercontent.com/nnqYh6KBZvmTw-JNabzac3JwpzxQBuRmpwiyt18hZzi-gZWl750Qx6Io_kBOdomLHFxl8bBCxNs=s160-c-k-c0x00ffffff-no-rj" alt="BassProwler" />
+    <h1>@BassProwler</h1>
+    <p>I AM THE BASS SLAYER</p>
+
+    <a class="button" href="https://example.com" target="_blank">Website</a>
+    <a class="button" href="https://www.youtube.com/@BassProwler" target="_blank">YouTube</a>
+    <a class="button" href="https://www.tiktok.com/@bass.prowler?_t=ZM-8xVxBRzo0bY&_r=1" target="_blank">TikTok</a>
+  </div>
 </body>
 </html>
